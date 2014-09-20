@@ -1,0 +1,28 @@
+<div data-role="view" id="addCardView" data-title="Add New Card" data-show="onAddCardViewShow" data-model="addCardViewModel">
+    <div data-role="header">
+        <div data-role="navbar">
+            <a href="#cardsView" data-role="button" data-align="left">Cancel</a>
+            <span data-role="view-title"></span>
+            <button data-role="button" data-align="right" id="buttonAddNewCardView" class="isCardValid" data-bind="events: { click: addNewCard }">Add</button>
+        </div>
+    </div>
+    <div>
+        <ul class="addNewCardWrapper" data-role="listview" data-style="inset">
+            <li>
+                <label>
+                    Workout Name
+                    <input id="cardNumberField" type="text" maxlength="20" data-bind="value: cardNumber, events: { keyup: cardIdChanged }"/>
+                </label>
+            </li>
+        </ul>
+        <div id="addNewCardErrorLog"></div>
+    </div>
+    <div class="content">
+        <div class="result-area ch70">
+            <div class="results">
+            This is a test
+                <div id="results" class="desc"></div>
+            </div>
+        </div>
+    </div>
+</div>
